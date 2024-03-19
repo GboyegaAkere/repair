@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <>
 <header className="text-white flex flex-col fixed top-0 left-0 w-full z-10">
-  <nav className="bg-gray-800  md:px-[160px] flex gap-6">
+  <nav className="bg-head  md:px-[120px] flex gap-6">
       <div className="container mx-auto flex items-center justify-between px-4 md:px-10 relative">
         {/* Logo */}
         <Link to="/" className="hidden md:block flex-shrink-0">
@@ -52,7 +52,7 @@ const Header = () => {
         </div>
 
         <Link to="/" className="block md:hidden items-center ml-[30px]">
-          <img src={SmallLogo} alt="" className='w-[60px] h-[60px]' />
+          <img src={Logo} alt="" className='w-[60px] h-[60px]' />
         </Link>
 
         
@@ -77,24 +77,33 @@ const Header = () => {
              <span className='text-sm'>Home</span>
         </Link>
 
-        <Link to="/buy" className={`mr-6 cursor-pointer flex flex-row gap-2 w-[95px] h-[35px] items-center justify-center hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'buy' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
+        <Link to="/repair" className={`mr-6 cursor-pointer flex flex-row gap-2 w-[95px] h-[35px] items-center justify-center hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'repair' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
+          onClick={() => handleItemClick('repair')}>
+            <span><FaMoneyBills /></span>
+            <span className='text-sm'>Repairs</span>
+        </Link>
+
+        <Link to="/policy" className={`mr-6 cursor-pointer flex flex-row gap-2 w-[95px] h-[35px] items-center justify-center hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'policy' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
+          onClick={() => handleItemClick('policy')}>
+            <span><FaMoneyBills /></span>
+            <span className='text-sm'>Policies</span>
+        </Link>
+
+        <Link to="/warranty" className={`mr-6 cursor-pointer flex flex-row gap-2 w-[95px] h-[35px] items-center justify-center hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'warranty' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
+          onClick={() => handleItemClick('warranty')}>
+            <span><FaMoneyBills /></span>
+            <span className='text-sm'>Warranty</span>
+        </Link>
+
+        <Link to="/buy" className={`mr-6 cursor-pointer flex flex-row gap-2 w-[150px] h-[35px] items-center justify-center hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'buy' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
           onClick={() => handleItemClick('buy')}>
             <span><FaMoneyBills /></span>
-            <span className='text-sm'>Buy R$</span>
+            <span className='text-sm'>Buy/Sell/Trade</span>
         </Link>
 
-        <Link to="/limited" className={`mr-6 cursor-pointer flex flex-row gap-2 w-[120px] h-[35px] items-center justify-center hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'limited' ? 'text-white bg-menu': 'text-gray-500 hover:text-blue-500'}`} 
-          onClick={() => handleItemClick('limited')}>
-            <span><GiCaptainHatProfile /></span>
-            <span className='text-sm'>Buy Limiteds</span>
-        </Link>
+        
 
-        <Link to='/balance' className={`mr-6 cursor-pointer flex flex-row gap-2 w-[125px] h-[35px] items-center justify-center hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'balance' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
-          onClick={() => handleItemClick('balance')}>
-            <span>< IoAddCircleOutline /></span>
-            <span className='text-sm'>Add Balance</span>
-        </Link>
-
+       
         <Link to='/faq' className={`mr-6 cursor-pointer flex flex-row gap-2 w-[95px] h-[35px] items-center justify-center hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'faq' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
           onClick={() => handleItemClick('faq')}>
             <span>< FaRegQuestionCircle  /></span>
@@ -103,21 +112,15 @@ const Header = () => {
 
         <Link to='/contact' className={`mr-6 cursor-pointer flex flex-row gap-2 w-[95px] h-[35px] items-center justify-center hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'contact' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
           onClick={() => handleItemClick('contact')}>
-            <span><LuBitcoin /></span>
+            <span><FaRegEnvelope /></span>
             <span className='text-sm'>Contact</span>
         </Link>
 
-        <Link to='/sell' className={`mr-6 cursor-pointer flex flex-row gap-2 w-[125px] h-[35px] items-center justify-center hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'sell' ? 'text-white bg-menu': 'text-gray-500 hover:text-blue-500'}`} 
-          onClick={() => handleItemClick('sell')}>
-            <span><MdOutlineStickyNote2 /></span>
-            <span className='text-sm'>Apply to Sell</span>
+        <Link to='/about' className={`mr-6 cursor-pointer flex flex-row gap-2 w-[95px] h-[35px] items-center justify-center hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'about' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
+          onClick={() => handleItemClick('about')}>
+            <span><FaRegEnvelope /></span>
+            <span className='text-sm'>About Us</span>
         </Link>
-
-        <div className={`mr-6 cursor-pointer flex flex-row gap-2 w-[95px] h-[35px] items-center justify-center hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'earn' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
-          onClick={() => handleItemClick('earn')}>
-            <span>< CiGift /></span>
-            <span className='text-sm'>Earn R$</span>
-        </div>
       </div>
       
       
@@ -131,25 +134,34 @@ const Header = () => {
               <span className='text-sm'>Home</span>
           </Link>
 
+          <Link to="/repair" className={`mr-6 cursor-pointer flex pl-3 flex-row gap-2 w-[220px] h-[45px] items-center  hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'repair' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
+          onClick={() => handleItemClick('repair')}>
+            <span><FaMoneyBills /></span>
+            <span className='text-sm'>Repair</span>
+          </Link>
+
+
+          <Link to="/policy" className={`mr-6 cursor-pointer flex pl-3 flex-row gap-2 w-[220px] h-[45px] items-center  hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'policy' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
+          onClick={() => handleItemClick('policy')}>
+            <span><FaMoneyBills /></span>
+            <span className='text-sm'>Policies</span>
+          </Link>
+
+          <Link to="/warranty" className={`mr-6 cursor-pointer flex pl-3 flex-row gap-2 w-[220px] h-[45px] items-center  hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'warranty' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
+          onClick={() => handleItemClick('warranty')}>
+            <span><FaMoneyBills /></span>
+            <span className='text-sm'>Warranty</span>
+          </Link>
+
+
           <Link to="/buy" className={`mr-6 cursor-pointer flex pl-3 flex-row gap-2 w-[220px] h-[45px] items-center  hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'buy' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
           onClick={() => handleItemClick('buy')}>
             <span><FaMoneyBills /></span>
-            <span className='text-sm'>Buy R$</span>
+            <span className='text-sm'>Buy/sell/trade</span>
           </Link>
 
-        <Link to="/limited" className={`mr-6 cursor-pointer flex flex-row gap-2 pl-3 w-[220px] h-[45px] items-center  hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'limited' ? 'text-white bg-menu': 'text-gray-500 hover:text-blue-500'}`} 
-          onClick={() => handleItemClick('limited')}>
-            <span><GiCaptainHatProfile /></span>
-            <span className='text-sm'>Buy Limiteds</span>
-        </Link>
 
-        <Link to="/balance" className={`mr-6 cursor-pointer flex flex-row gap-2 pl-3 w-[220px] h-[45px] items-center  hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'balance' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
-          onClick={() => handleItemClick('balance')}>
-            <span>< IoAddCircleOutline /></span>
-            <span className='text-sm'>Add Balance</span>
-        </Link>
-
-
+        
         <Link to="/faq" className={`mr-6 cursor-pointer flex flex-row gap-2 pl-3 w-[220px] h-[45px] items-center  hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'faq' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
           onClick={() => handleItemClick('faq')}>
             <span>< FaRegQuestionCircle  /></span>
@@ -162,17 +174,11 @@ const Header = () => {
             <span className='text-sm'>Contact</span>
         </Link>
 
-         <Link to="/sell" className={`mr-6 cursor-pointer flex flex-row gap-2 pl-3 w-[220px] h-[45px] items-center  hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'sell' ? 'text-white bg-menu': 'text-gray-500 hover:text-blue-500'}`} 
-          onClick={() => handleItemClick('sell')}>
-            <span><MdOutlineStickyNote2 /></span>
-            <span className='text-sm'>Apply to Sell</span>
-         </Link>
-
-           <div className={`mr-6 cursor-pointer flex flex-row gap-2 pl-3 w-[220px] h-[45px] items-center  hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'earn' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
-              onClick={() => handleItemClick('earn')}>
-                <span>< CiGift /></span>
-                <span className='text-sm'>Earn R$</span>
-           </div>
+        <Link to="/about" className={`mr-6 cursor-pointer flex flex-row gap-2 pl-3 w-[220px] h-[45px] items-center  hover:bg-blue-100 hover:text-blue-400 rounded-lg ${activeItem === 'about' ? 'text-white bg-menu' : 'text-gray-500 hover:text-blue-500'}`} 
+          onClick={() => handleItemClick('about')}>
+            <span><LuBitcoin /></span>
+            <span className='text-sm'>About Us</span>
+        </Link>
         </motion.nav>
       )}
     </header>

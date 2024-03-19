@@ -50,6 +50,7 @@ export default {
       },
       colors: {
         button: '#13DE95',
+        head:'#808080',
         header: "#101418",
         menu: "#C883FD",
         primary: "RGB(119, 63, 152)",

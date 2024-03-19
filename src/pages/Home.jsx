@@ -6,6 +6,7 @@ import { useTypewriter,Cursor} from 'react-simple-typewriter'
 import Funds from '../assets/images/funds-icon.svg'
 import Limiteds from '../assets/images/limiteds-icon.svg'
 import { motion } from "framer-motion";
+import TestimonialsSection from '../data/testimonials'
 
 const Home = () => {
 
@@ -82,7 +83,8 @@ const Home = () => {
       </p>
     </div>
     
-</div> 
+</div>
+  <TestimonialsSection/>
     </>
     
   )
