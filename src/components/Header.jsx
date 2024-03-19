@@ -57,16 +57,6 @@ const Header = () => {
 
         
         <p className="text-white text-sm hidden md:block px-4">Need device repairs at unbeatable prices? Our expert technicians have you covered! From smartphones to laptops, we fix it all </p>
-        {/* <div className=" md:flex items-center">
-          <div className='flex flex-row items-center gap-3 md:gap-5'>
-            <div className='w-[190px] h-[40px] flex items-center justify-center bg-black border-2 text-green-400 border-emerald-300 rounded-lg hover:bg-green-300 hover:text-white'>
-              <span className='flex-shrink-0'>Balance: $3000 USD</span>
-            </div>
-            <div className='w-[40px] h-[40px] flex items-center'>
-              <FaUser className='text-2xl text-white' />
-            </div>
-          </div>
-        </div>  */}
       </div>
     </nav>
 

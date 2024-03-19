@@ -12,11 +12,3 @@ const Footer = () => {
 };
 
 export default Footer;
-{/* <span className='text-2xl text-white'>
-{typeEffect}
-</span>
-<div className="absolute left-0 top-10 mb-5">
-<button className='w-[147px] h-[37px] flex items-center hover:bg-gray-300 text-black bg-white rounded-lg justify-center'>
-  Get Started Now
-</button>
-</div> */}

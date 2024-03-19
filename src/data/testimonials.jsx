@@ -5,17 +5,17 @@ import "slick-carousel/slick/slick-theme.css";
 
 const TestimonialCard = ({ testimonial }) => {
   return (
-    <div className="bg-white rounded-lg p-6 shadow-md">
+    <div className="bg-white rounded-lg  p-6 shadow-lg">
       <p className="text-gray-600 mb-4">{testimonial.text}</p>
       <div className="flex items-center">
-        <img
+        {/* <img
           src={testimonial.avatar}
           alt="Avatar"
           className="w-12 h-12 rounded-full mr-4"
-        />
+        /> */}
         <div>
           <p className="font-semibold">{testimonial.author}</p>
-          <p className="text-gray-500">{testimonial.position}</p>
+          <p className="text-gray-500">{testimonial.device}</p>
         </div>
       </div>
     </div>
@@ -49,16 +49,16 @@ const TestimonialSlider = ({ testimonials }) => {
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      text: "I am really impressed with the repair of my Pixel 2 screen. I thought it would be an issue because the phone isn't supported again by Google, but he was able find the screen and made the repair in no time. Very professional and skilled. I would HIGHLY recommend.",
       author: "John Doe",
-      position: "CEO, Company Inc.",
+    //   device: "Samsung Galaxy.",
       avatar: "https://via.placeholder.com/50",
     },
     {
-      text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      text: "Really good service, fixed my screen and changed my battery. Very reliable and quick, would highly recommend..",
       author: "Jane Smith",
-      position: "CTO, Company Inc.",
-      avatar: "https://via.placeholder.com/50",
+    //   device: "Iphone12",
+    //   avatar: "https://via.placeholder.com/50",
     },
     // Add more testimonials as needed
   ];

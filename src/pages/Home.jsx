@@ -7,6 +7,7 @@ import Funds from '../assets/images/funds-icon.svg'
 import Limiteds from '../assets/images/limiteds-icon.svg'
 import { motion } from "framer-motion";
 import TestimonialsSection from '../data/testimonials'
+import Repairs from './Repairs'
 
 const Home = () => {
 
@@ -39,7 +40,7 @@ const Home = () => {
                   </span>
                   <div className="absolute left-0 top-10 mb-5">
                     <button className='w-[147px] h-[37px] flex items-center hover:bg-gray-300 text-black bg-white rounded-lg justify-center'>
-                      Contact Us ow
+                      Contact Us
                     </button>
                   </div>
                 </div>
@@ -76,15 +77,21 @@ const Home = () => {
                 </div>
             </div>
         </div>
- <div className="w-full px-20 md:px-[200px] mt-5">
-    <div className="container mx-auto text-center text-blue-300">
-      <p className="md:inline-block text-gray-400">
-        We are not affiliated with Roblox Corporation. All trademarks are owned by their respective owners, and are used here solely to reference specific products.
-      </p>
-    </div>
+        <div>
+          <Repairs/>
+        </div>
+        <div className='mt-10 mb-10'>
+          <TestimonialsSection/>
+        </div>
+        <div className="w-full px-20 md:px-[200px] mt-5">
+            <div className="container mx-auto text-center text-blue-300">
+            <p className="md:inline-block text-gray-400">
+            Fast and reliable repairs by experienced technicians at affordable prices, ensuring quality parts and service - contact us now for all your device repair needs
+            </p>
+          </div>
     
 </div>
-  <TestimonialsSection/>
+  
     </>
     
   )

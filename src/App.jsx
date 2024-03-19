@@ -11,6 +11,7 @@ import Sell from "./pages/Sell"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "./components/Footer"
+import Repairs from "./pages/Repairs"
 
 
 export default function App() {
@@ -24,7 +25,7 @@ export default function App() {
           <Route path="/balance" element={<AddBalance/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/faq" element={<Faq/>}/>
-          <Route path="/limited" element={<Limiteds/>}/>
+          <Route path="/repair" element={<Repairs/>}/>
           <Route path="/sell" element={<Sell/>}/>
         </Routes>
         <Footer/>
