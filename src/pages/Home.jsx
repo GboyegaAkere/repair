@@ -112,7 +112,7 @@ const Home = () => {
                       </motion.div>
                 </div>
             </div>
-            <p className='flex justify-center text-3xl font-bold mt-[100px] underline'>Find Out who we are</p>
+            <p className='flex justify-center text-3xl hover:text-blue-600 font-bold mt-[100px] underline'>Find Out who we are</p>
         </div>
         <div>
           <Repairs/>
