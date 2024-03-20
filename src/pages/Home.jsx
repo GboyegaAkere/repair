@@ -49,13 +49,13 @@ const Home = () => {
                 </div>
              </div>
        </div>
-       <div className='flex justify-center mt-10'>
+       <div className='flex justify-center mt-10 '>
         <p className='text-3xl font-semibold'>We Repair</p>
        </div>
        </div>
   
         <div>
-            <div className='grid gap-8 px-2  mt-[130px] md:grid-cols-2 w-full md:px-[200px] md:mt-[150px] lg-[200px]'>
+            <div className='grid gap-8 px-2  mt-[185px] md:grid-cols-2 w-full md:px-[200px] md:mt-[150px] lg-[200px]'>
             <div className='w-full bg-primary h-[195px] rounded flex flex-row items-center justify-around'>
             <div className='w-[313px] h-[105px] mt-6 ml-4'>
         <p className='font-semibold text-white'>Need Samsung repair?</p>
