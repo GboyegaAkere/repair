@@ -22,6 +22,7 @@ const Header = () => {
   
   const handleItemClick = (item) => {
     setActiveItem(item);
+    setIsMenuOpen(false);
     // You can add additional logic here, such as navigating to a different page
   };
   

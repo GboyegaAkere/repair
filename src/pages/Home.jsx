@@ -1,7 +1,7 @@
 import React from 'react'
 import Money from '../assets/images/money-pile.png'
 import Slide from './Slide'
-import Banner from '../assets/images/banner.png'
+import Bann from '../assets/images/bann.png'
 import { useTypewriter,Cursor} from 'react-simple-typewriter'
 import Laptop from '../assets/images/laptop.jpg'
 import Sam from '../assets/images/sam.jpg'
@@ -15,7 +15,7 @@ import Repairs from './Repairs'
 const Home = () => {
 
     const [typeEffect] = useTypewriter({
-    words:["No hidden fees", "great customer service", "Zero risk"],
+    words:["No hidden fees", "Great customer service", "Zero risk"],
     loop:{},
     typeSpeed:40,
     deleteSpeed:40
@@ -32,7 +32,7 @@ const Home = () => {
           </div>
            
               <div className='w-full h-[300px] md:h-[257px] rounded-lg relative overflow-hidden'>
-                <img src={Banner} alt="" className='w-full h-full object-cover' />
+                <img src={Bann} alt="" className='w-full h-full object-cover' />
                 <div className='w-[567px] h-[179px] ml-5 relative bottom-[269px]'>
                       <div className='w-[330px] md:w-[533px] h-[72px]'>
                         <p className='text-2xl font-semibold md:text-3xl text-black pt-10'>Hope <span className='text-yellow-400 font-bold'>To get</span>your device fixed at affordable rate ?</p>
@@ -55,7 +55,7 @@ const Home = () => {
        </div>
   
         <div>
-            <div className='grid gap-8 px-5 mt-[130px] md:grid-cols-2 w-full md:px-[200px] md:mt-[150px] lg-[200px]'>
+            <div className='grid gap-8 px-2  mt-[130px] md:grid-cols-2 w-full md:px-[200px] md:mt-[150px] lg-[200px]'>
             <div className='w-full bg-primary h-[195px] rounded flex flex-row items-center justify-around'>
             <div className='w-[313px] h-[105px] mt-6 ml-4'>
         <p className='font-semibold text-white'>Need Samsung repair?</p>
@@ -103,8 +103,8 @@ const Home = () => {
                         <p className='font-semibold text-white'>Any other Brands</p>
                         <p className='text-white'>  Whether it's a Google Pixel etc</p>
                         <p className='text-white'> Quality Replacement Parts</p>
-                        <button className="w-[145px] h-[37px] flex items-center justify-center bg-white hover:bg-gray-200 rounded-lg mt-3">
-                        Contact Us
+                        <button className="w-[145px] h-[37px] flex items-center justify-center bg-white hover:bg-gray-200 rounded-lg ">
+                          Contact Us
                         </button>
                     </div> 
                       <motion.div whileHover={{ rotate: 360 }} transition={{ duration: 0.5 }}>
